@@ -1,79 +1,39 @@
 # OctoAcme Project Management Docs
 
-Welcome to OctoAcme's project management documentation. This folder contains comprehensive guidance for running projects from initiation through closure.
+Welcome — this folder contains OctoAcme's project management process documentation and quick references for running projects from initiation through closure.
 
 ## Overview
+OctoAcme runs projects with a lightweight, disciplined lifecycle that moves work from initiation through planning, execution, release, and continuous improvement. Work begins with a short Project One‑pager to capture the problem, measurable goals, stakeholders, and a high‑level timeline; that one‑pager plus an initial risk list and backlog skeleton are the minimum deliverables needed to gate planning. Planning breaks approved initiatives into shippable increments (backlog items with acceptance criteria, estimates, and owners), defines a Definition of Done, and maps release milestones.
 
-OctoAcme uses a structured, iterative approach to project delivery grounded in these principles:
-- **Customer-first**: Prioritize customer value and usability
-- **Iterative delivery**: Deliver small, testable increments
-- **Clear ownership**: Each project has named accountability
-- **Data-informed decisions**: Measure impact and iterate based on evidence
-- **Psychological safety**: Encourage feedback and learning
+Day‑to‑day execution is organized around a clear project board workflow (Backlog → Ready → In Progress → In Review → QA → Done) and frequent team rhythms: short daily standups to surface progress and blockers, weekly delivery syncs for status and risks, and demos at the end of sprints or milestones. Pull requests are intentionally small, include acceptance criteria and linked issues, and require passing CI (tests, linting, security scans) plus approvals before merging. Cross‑team dependencies and escalations follow defined paths and risks are tracked in the Risk Register.
+
+Roles are explicit: Product Managers define outcomes and success metrics, Project Managers coordinate delivery and communications, Developers implement and test features, and QA validates acceptance criteria. This clarity supports efficient planning (capacity and estimation) and visible ownership of action items and risks. Communication cadence includes PM+PdM weekly alignment, regular standups, and monthly stakeholder updates.
+
+Quality assurance and release practices emphasize automated and manual safeguards. Developers add unit and integration tests; critical flows get end‑to‑end smoke tests and CI includes security scanning. Releases follow a pre‑release checklist, deploy to staging for verification, then to production via automated pipelines when possible. A rollback and incident playbook is specified for failures and retrospectives capture improvements that feed back into the backlog.
 
 ## Process Documents
-
-### 0. [Project Management Overview](octoacme-project-management-overview.md)
-Reference document for OctoAcme's project management approach, principles, and methodology overview
-
-### 1. [Project Initiation Guide](octoacme-project-initiation.md)
-Use when: A new project idea is ready to be explored
-- Validate business need and measurable outcomes
-- Identify stakeholders and champions
-- Create a lightweight Project One-pager
-
-### 2. [Project Planning](octoacme-project-planning.md)
-Use when: An approved initiative needs an actionable plan
-- Break work into shippable increments
-- Identify dependencies and risks
-- Align timelines and responsibilities
-
-### 3. [Execution & Tracking](octoacme-execution-and-tracking.md)
-Use when: Your team is actively delivering features
-- Manage day-to-day execution and progress
-- Follow PR and testing workflows
-- Track velocity and respond to blockers
-
-### 4. [Release & Deployment Guide](octoacme-release-and-deployment.md)
-Use when: Features are ready for production
-- Standardize release processes
-- Prepare pre-release requirements
-- Plan rollback strategies
-
-### 5. [Risk Management & Communication](octoacme-risks-and-communication.md)
-Use when: Identifying and managing project risks
-- Maintain a risk register
-- Communicate status to stakeholders
-- Escalate issues appropriately
-
-### 6. [Retrospective & Continuous Improvement](octoacme-retrospective-and-continuous-improvement.md)
-Use when: Completing a sprint, release, or milestone
-- Capture learnings and improvements
-- Track action items
-- Build a culture of continuous iteration
-
-### 7. [Roles & Personas](octoacme-roles-and-personas.md)
-Use when: Understanding responsibilities and communication patterns
-- Reference role definitions (Developers, Product Managers, Project Managers)
-- Align on responsibilities and goals
+- 1. [Project Initiation Guide](octoacme-project-initiation.md)
+- 2. [Project Planning](octoacme-project-planning.md)
+- 3. [Execution & Tracking](octoacme-execution-and-tracking.md)
+- 4. [Release & Deployment Guide](octoacme-release-and-deployment.md)
+- 5. [Risk Management & Communication](octoacme-risks-and-communication.md)
+- 6. [Retrospective & Continuous Improvement](octoacme-retrospective-and-continuous-improvement.md)
+- 7. [Roles & Personas](octoacme-roles-and-personas.md)
 
 ## Quick Navigation by Project Phase
-
 | Phase | Primary Documents | Key Activities |
-|-------|-------------------|-----------------|
-| **Initiation** | Project Initiation Guide | One-pager, stakeholder alignment, decision gate |
-| **Planning** | Project Planning, Roles & Personas | Backlog creation, estimation, risk identification |
-| **Execution** | Execution & Tracking, Risk Management | Daily standups, PR reviews, progress tracking |
-| **Release** | Release & Deployment, Risk Management | Deployment checklist, smoke tests, announce |
-| **Closure** | Retrospective & Continuous Improvement | Capture learnings, action items, celebrate |
+|-------|-------------------|----------------|
+| Initiation | Project Initiation Guide | One-pager, stakeholder alignment, decision gate |
+| Planning | Project Planning, Roles & Personas | Backlog creation, estimation, risks |
+| Execution | Execution & Tracking, Risk Management | Daily standups, PR reviews, progress tracking |
+| Release | Release & Deployment, Risk Management | Deployment checklist, smoke tests, announce |
+| Closure | Retrospective & Continuous Improvement | Capture learnings, action items |
 
 ## How to Use These Docs
-
-1. **For new projects**: Start with the [Project Initiation Guide](octoacme-project-initiation.md)
-2. **For ongoing work**: Refer to the phase-specific documents and use checklists
-3. **For issues or escalations**: Check [Risk Management & Communication](octoacme-risks-and-communication.md)
-4. **For process improvements**: Contribute updates via the [Add Content to Project Management Process Docs](../.github/ISSUE_TEMPLATE/add-update-content-to-process-docs.yml) issue template
+1. For new projects: start with the Project Initiation Guide.
+2. For ongoing work: follow phase-specific docs and use the checklists.
+3. For issues or escalations: check Risk Management & Communication.
+4. To propose improvements: use the Add Content to Project Management Process Docs issue template: ../.github/ISSUE_TEMPLATE/add-update-content-to-process-docs.yml
 
 ## Contributing
-
-If you have feedback, process improvements, or new best practices to share, please use the [Add Content to Project Management Process Docs](../.github/ISSUE_TEMPLATE/add-update-content-to-process-docs.yml) issue template
+Please propose updates via the provided issue template. Document updates should align with existing process docs and be reviewed as appropriate.
