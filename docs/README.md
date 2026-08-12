@@ -13,6 +13,9 @@ OctoAcme uses a structured, iterative approach to project delivery grounded in t
 
 ## Process Documents
 
+### 0. [Project Management Overview](octoacme-project-management-overview.md)
+Reference document for OctoAcme's project management approach, principles, and methodology overview
+
 ### 1. [Project Initiation Guide](octoacme-project-initiation.md)
 Use when: A new project idea is ready to be explored
 - Validate business need and measurable outcomes
@@ -73,4 +76,4 @@ Use when: Understanding responsibilities and communication patterns
 
 ## Contributing
 
-If you have feedback, process improvements, or new best practices to share, please use the [Add Content to Project Management Process Docs](../.github/ISSUE_TEMPLATE/add-update-content-to-process-docs.yml) issue template to propose updates.
+If you have feedback, process improvements, or new best practices to share, please use the [Add Content to Project Management Process Docs](../.github/ISSUE_TEMPLATE/add-update-content-to-process-docs.yml) issue template
